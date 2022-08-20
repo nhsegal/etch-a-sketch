@@ -9,8 +9,36 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-       <div id="board">
-       </div>
+        <div id="top">My Crazy Etch-a-Sketch</div>
+        <div id="middle">
+            <div id="controls"> 
+                <div class="slide-container">
+                    <strong>Resolution:</strong>
+                    <input type="range" min="1" max="100" value="16" class="slider" id="cell-number">
+                </div>
+                     
+                <div>
+                    <strong>Fill:</strong>
+                    <div class="color-slide-container" id="red">
+                        <label>Red: <span id="red"></span></label>           
+                        <input type="range" min="1" max="250" value="175" class="slider color-slider" id="redSlider">
+                    </div>
+                    <div class="color-slide-container" id="green">
+                        <label>Green: <span id="green"></span></label>
+                        <input type="range" min="1" max="250" value="175" class="slider color-slider" id="greenSlider">
+                    </div>
+                    <div class="color-slide-container" id="blue">
+                        <label>Blue: <span id="blue"></span></label>
+                        <input type="range" min="1" max="250" value="175" class="slider color-slider" id="blueSlider">
+                    </div>
+                </div>
+
+               
+            </div>
+            <div id="board"></div>
+            <div id="right-side"></div>
+        </div>
+        <div id="bottom"></div>
         <script src="script.js"></script>
     </body>
 </html>

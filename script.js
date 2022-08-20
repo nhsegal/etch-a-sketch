@@ -5,11 +5,13 @@ const sqs = 16;
 for (let i = 0; i < sqs; i++) {
     const col = document.createElement('div');
     col.classList.add('col');
-    col.setAttribute('style', 'flex-grow: 1; border-right: .5px solid grey; display: flex; flex-direction: column;');
+    col.setAttribute('style', 'flex-grow: 1; display: flex; flex-direction: column;');
     for (let j = 0; j < sqs; j++) {
         const cell = document.createElement('div');
         cell.classList.add('cell');
-        cell.setAttribute('style', 'flex-grow: 1; border-top: .5px solid grey;');
+        cell.setAttribute(
+            'style', 
+            'flex-grow: 1; border: .5px solid grey; border-radius: 4px;');
         col.appendChild(cell);
     }    
     board.appendChild(col);
